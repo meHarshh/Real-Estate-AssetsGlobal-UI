@@ -1,0 +1,289 @@
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding: 20px;
+}
+
+.service-card {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: translateY(-5px) scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.overlay div img {
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.service-title {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.service-popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.service-popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 300px; /* Adjusted size for a smaller popup */
+  width: 90%; /* Adjusted width to fit smaller screen sizes */
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-popup-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 20px;
+  position: relative; /* Ensure that children with absolute positioning are relative to this container */
+}
+
+.service-popup-header img {
+  width: 120px; /* Adjusted size */
+  height: 120px; /* Adjusted size */
+  border-radius: 50%;
+  object-fit: cover;
+  position: fixed; /* Changed to absolute positioning */
+  top: 15%; /* Adjusted position to fit within the popup */
+  left:35%; /* Adjusted position to fit within the popup */
+  z-index: 1; /* Ensure it's above other content */
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.service-popup-content h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  margin-left: 100px; /* Adjusted to fit the smaller image size */
+}
+
+.service-popup-content p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  text-align: justify;
+  margin-top: 2rem; 
+  
+  /* Adjusted to fit the smaller image size */
+}
+
+.service-popup-content button {
+  background-color: #7ab945;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.service-popup-content button:hover {
+  background-color: #5a8b34;
+}
+@media (max-width:2024px){
+  .service-popup-header img{
+    top: 15%; /* Adjusted position to fit within the popup */
+  left:39.5%; /* Adjusted position to fit within the popup */
+  }
+}
+@media (max-width:1900px){
+  .service-popup-header img{
+    top: 15%; /* Adjusted position to fit within the popup */
+  left:39%; /* Adjusted position to fit within the popup */
+  }
+}
+@media (max-width:1800px){
+  .service-popup-header img{
+    top: 15%; /* Adjusted position to fit within the popup */
+  left:38%; /* Adjusted position to fit within the popup */
+  }
+}
+@media (max-width:1700px){
+  .service-popup-header img{
+    top: 15%; /* Adjusted position to fit within the popup */
+  left:36%; /* Adjusted position to fit within the popup */
+  }
+}
+@media (max-width:1500px){
+  .service-popup-header img{
+    top: 15%; /* Adjusted position to fit within the popup */
+  left:34%; /* Adjusted position to fit within the popup */
+  }
+}
+@media (max-width:1320px){
+  .service-popup-header img{
+    top: 25%; /* Adjusted position to fit within the popup */
+  left:34%; /* Adjusted position to fit within the popup */
+  }
+}
+@media (max-width:1200px){
+  .service-popup-header img{
+    top: 25%; /* Adjusted position to fit within the popup */
+  left:30%; /* Adjusted position to fit within the popup */
+  }
+}
+@media (max-width:968px){
+  .service-popup-header img{
+    top: 24%; /* Adjusted position to fit within the popup */
+  left:29%; /* Adjusted position to fit within the popup */
+  }
+}
+@media (max-width:888px){
+  .service-popup-header img{
+    top: 29%; /* Adjusted position to fit within the popup */
+  left:25%; /* Adjusted position to fit within the popup */
+  }
+}
+@media (max-width:768px){
+  .service-popup-header img{
+    top: 29%; /* Adjusted position to fit within the popup */
+  left:23%; /* Adjusted position to fit within the popup */
+  }
+}
+@media (max-width:688px){
+  .service-popup-header img{
+    top: 29%; /* Adjusted position to fit within the popup */
+  left:19%; /* Adjusted position to fit within the popup */
+  }
+  .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: top;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+}
+@media (max-width:672px){
+  .service-popup-header img{
+    top: 31% !important; /* Adjusted position to fit within the popup */
+  left:21%; /* Adjusted position to fit within the popup */
+  }
+}
+@media (max-width:671px){
+  .service-popup-header img{
+    top: 37% !important; /* Adjusted position to fit within the popup */
+  left:19%; /* Adjusted position to fit within the popup */
+  }
+}
+@media (max-width:598px){
+  .service-popup-header img{
+    top: 37% !important; /* Adjusted position to fit within the popup */
+  left:15%; /* Adjusted position to fit within the popup */
+  }
+}
+@media (max-width:536px){
+  .service-popup-header img{
+    top: 37% !important; /* Adjusted position to fit within the popup */
+  left:13%; /* Adjusted position to fit within the popup */
+  }
+}
+@media (max-width:500px){
+  .service-popup-header img{
+    top: 37% !important; /* Adjusted position to fit within the popup */
+  left:10%; /* Adjusted position to fit within the popup */
+  }
+}
+@media (max-width:462px){
+  .service-popup-header img{
+    top: 37% !important; /* Adjusted position to fit within the popup */
+  left:8%; /* Adjusted position to fit within the popup */
+  }
+}
+@media (max-width:456px){
+  .service-popup-header img{
+    top: 43% !important; /* Adjusted position to fit within the popup */
+  left:7%; /* Adjusted position to fit within the popup */
+  }
+}
+@media (max-width:428px){
+  .service-popup-header img{
+    top: 43% !important; /* Adjusted position to fit within the popup */
+  left:5%; /* Adjusted position to fit within the popup */
+  }
+}
+@media screen and (max-width:390px) {
+  .services-container{
+    width: 90%;
+    /* margin-left: -1rem; */
+  }
+}
+@media (max-width:348px){
+  .service-popup-header img{
+    top: 43% !important; /* Adjusted position to fit within the popup */
+  left:3%; /* Adjusted position to fit within the popup */
+  }
+}
+@media (max-width:328px){
+  .service-popup-header img{
+    top: 43% !important; /* Adjusted position to fit within the popup */ /* Adjusted position to fit within the popup */
+  }
+}
+/* @media (max-width: 768px) {
+  .service-card {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .service-popup-header img {
+    width: 80px; 
+    height: 80px; 
+    top: -5px; 
+    left: -5px; 
+  }
+
+  .service-popup-content h2,
+  .service-popup-content p {
+    margin-left: 100px; 
+  } */
+/* } */

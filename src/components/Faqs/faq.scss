@@ -1,0 +1,82 @@
+.event-faq-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: auto;
+  margin-bottom: 4rem;
+}
+
+.event-faq-div {
+  width: 100%;
+  text-align: center; /* Center-align content */
+  cursor: pointer;
+  background-color: white; /* Light background color */
+  transition: background-color 0.3s; /* Faster background color transition */
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center-align items horizontally */
+  justify-content: center; /* Center-align items vertically */
+}
+
+.event-faq-div:hover {
+  background-color: #eaeaea; /* Slightly darker background on hover */
+}
+
+.event-faq-div button {
+  width: 100%;
+  border: none;
+  background: none;
+  font-size: 18px; /* Font size for the button text */
+  font-weight: 600; /* Slightly bolder font weight */
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between; /* Space between text and arrow */
+  align-items: center;
+  text-align: left; /* Center align items in the button */
+  padding: 1rem 2rem; /* Padding for the button */
+  margin: 0;
+}
+
+.event-faq-div p {
+  width: 100%;
+  max-height: 0; /* Collapse state */
+  overflow: hidden;
+  text-align: left;
+  transition: max-height 0.4s ease-out, padding 0.4s ease-out; /* Smooth transition */
+  padding: 0 0.5rem; /* Padding when collapsed */
+  margin: 0; /* Ensure no extra margin */
+}
+
+.event-faq-div p.expand {
+  max-height: 150px; /* Adjusted max-height for expanded state */
+  padding: 0.5rem; /* Padding when expanded */
+  margin-left: 4rem;
+  transition: max-height 0.4s ease-in, padding 0.4s ease-in; /* Smooth transition */
+}
+
+.arrow {
+  transition: transform 0.3s, color 0.3s; /* Smooth transition for both transform and color */
+  font-size: 18px; /* Size of the arrow icon */
+  color: #333; /* Neutral color for the arrow */
+}
+
+.arrow.up {
+  transform: rotate(180deg);
+  color: #007bff; /* Blue color for expanded state */
+}
+
+.event-faq-divider {
+  width: 100%;
+  border-top: 1px solid #ddd; /* Subtle line to separate sections */
+  margin: 0; /* Remove margin around the line */
+}
+@media screen and (max-width:390px) {
+  .event-faq-container{
+    margin-left: 25px;
+    // border: 1px solid red;
+  }
+  .event-faq-div p{
+    margin: auto;
+  }
+}

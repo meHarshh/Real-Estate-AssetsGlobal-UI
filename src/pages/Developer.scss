@@ -1,0 +1,228 @@
+.developer-main-container {
+  .developer-home-link {
+    p {
+      text-align: left;
+      margin-left: 10rem;
+    }
+  }
+  .developer-logo-container {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    display: flex;
+    gap: 2rem;
+    width: 80%;
+    left: 10%;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: flex-start;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background-image: url("../Images/developer/developerBgLogo.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top;
+      opacity: 0.9;
+      z-index: -1;
+    }
+
+    p {
+      color: #000;
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .developer-logo-name {
+      max-width: 40%;
+      width: 12%;
+      background-color: #fff;
+      height: 45%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      margin-left: 3rem;
+
+      img {
+        max-width: 100%;
+        width: 85%;
+        height: auto;
+      }
+    }
+    .developer-logo-details {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+
+      h2 {
+        color: #fff;
+        margin: 0;
+      }
+      .developer-logo-projects {
+        display: flex;
+        gap: 2rem;
+
+        color: #fff;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .developer-details-div {
+    div {
+      &:first-child {
+        margin: 2rem 0 1rem 0;
+      }
+
+      h3,
+      p {
+        width: 80%;
+        margin: 0;
+        margin-left: 10rem;
+        margin-bottom: 0.5rem;
+        text-align: left;
+      }
+
+      h3 {
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+      p {
+        font-size: 16px;
+      }
+      .expanded {
+        white-space: normal;
+        overflow: visible;
+        display: block;
+      }
+      .collapsed {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .developer-desc-btn {
+        cursor: pointer;
+        color: #7ab945;
+        background: #fff;
+        // background: #7ab945;
+        // color: #fff;
+        border: none;
+        padding: 0.4rem 1rem;
+        border-radius: 6px;
+
+        // &:hover {
+        //   color: #7ab945;
+        //   background: #fff;
+        // }
+      }
+    }
+  }
+
+  .developer-property-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    width: 100%;
+
+    .developer-property {
+      display: flex;
+      gap: 2rem;
+      width: 80%;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+//Responsive media
+
+@media (max-width: 990px) {
+  .developer-main-container {
+    .developer-details-div {
+      div {
+        h3,
+        p {
+          margin-left: 6.5rem;
+          width: 79%;
+          text-align: justify;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 766px) {
+  .developer-main-container {
+    .developer-logo-container {
+      .developer-logo-name {
+        height: 27%;
+      }
+    }
+
+    .developer-home-link {
+      p {
+        margin-left: 5rem;
+      }
+    }
+
+    .developer-details-div {
+      div {
+        h3,
+        p {
+          margin-left: 5rem;
+          width: 78%;
+          text-align: justify;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 566px) {
+  .developer-main-container {
+    .developer-logo-container {
+      .developer-logo-name {
+        height: 18%;
+      }
+      .developer-logo-details {
+        gap: 0.5rem;
+
+        .developer-logo-projects {
+          font-size: 12px;
+          gap: 0.8rem;
+        }
+
+        h2 {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .developer-details-div {
+      div {
+        h3,
+        p {
+          margin-left: 3.1rem;
+          width: 78%;
+          text-align: justify;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .developer-main-container {
+    .developer-logo-container {
+      gap: 1rem;
+    }
+  }
+}

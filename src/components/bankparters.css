@@ -1,0 +1,44 @@
+.clients-carousel {
+    max-width: 1000px; /* Adjust as needed */
+    margin: 0 auto; /* Center align */
+  }
+  
+  .carousel-image {
+    margin: 10 10;
+     /* Add margin to create gap between images */
+  }
+  
+  .carousel-navigation {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .prev-button,
+  .next-button {
+    background-color: #009933;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px; /* Adjust margin as needed */
+    transition: background-color 0.3s ease; /* Add transition effect */
+  }
+  
+  .prev-button:hover,
+  .next-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Hide Next button at the end */
+  .next-button {
+    display: block; /* Initially show Next button */
+  }
+  
+  @media (max-width: 768px) {
+    .prev-button,
+    .next-button {
+      font-size: 14px; /* Example: Reduce font size for smaller screens */
+    }
+  }
+  

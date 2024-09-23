@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Developer.scss">
+    <title>Developer Page</title>
+</head>
+
+<body>
+    <div class='developer-main-container'>
+        <div class='developer-home-link'>
+            <p><a href="/" style="color: black; text-decoration: none; opacity: 0.8;">Home</a> &gt;
+                <!-- developerName --> properties</p>
+        </div>
+        <div class='developer-logo-container'>
+            <section class='developer-logo-name'>
+                <!-- Example for 'prestige', replace as needed -->
+                <img src="../Images/clients/1.jpeg" alt="prestige logo">
+            </section>
+            <section class='developer-logo-details'>
+                <div>
+                    <h2><!-- developerName --> Group</h2>
+                </div>
+                <div class='developer-logo-projects'>
+                    <div>Total Projects : <span><!-- properties.length --></span></div>
+                    <div>Ongoing Projects : </div>
+                </div>
+            </section>
+        </div>
+        <div class='developer-details-div'>
+            <div>
+                <h3>About <!-- developerName --></h3>
+                <p><!-- developerInfo.about --></p>
+            </div>
+            <div>
+                <h3>Description</h3>
+                <p class="collapsed"><!-- developerInfo.description --></p>
+                <button class='developer-desc-btn'>Read More</button>
+            </div>
+        </div>
+        <div class='developer-property-div'>
+            <section class='developer-property'>
+                <!-- Repeat PropertyCard HTML for each property -->
+                <div class="property-card">
+                    <!-- Property details here -->
+                </div>
+            </section>
+        </div>
+        <!-- Loading indicator -->
+        <div class="loader-container">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

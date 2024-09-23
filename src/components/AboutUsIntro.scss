@@ -1,0 +1,316 @@
+.intro-container {
+  display: flex;
+  position: relative;
+  flex-direction: row; /* Align content horizontally */
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  height: 490px;
+  // gap: 8rem;
+  padding: 0;
+  overflow: hidden; /* Ensures child elements are contained */
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../Images/intro.jpeg");
+    background-size: cover; /* Adjusted to cover entire container */
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.35; /* Adjust opacity here */
+    z-index: 0; /* Ensures the background is behind the content */
+    pointer-events: none; /* Ensure background does not interfere with content interaction */
+  }
+}
+
+.sub-title {
+  display: none; /* Hide elements initially */
+  // font-size: clamp(40px, 2.5vw, 60px); /* Fluid typography */
+  font-size: 2.6rem;
+  font-weight: 700;
+  height: 100%;
+  letter-spacing: 1.82px;
+  color: #071739;
+  margin: 0;
+  opacity: 1; /* Ensure opacity starts at 1 */
+  text-align: left;
+  transform: translate(0, 0); /* Initial position for visibility */
+  // text-shadow: 5px 5px 10px rgb(0, 0, 0, 1);
+  // text-shadow: #000 1px 0 10px;
+  // text-shadow: 2px 2px 2px #071739, 0 0 4em rgb(7, 7, 7, 0.3), 0 0 0.6em black;
+}
+
+.slidingVertical {
+  align-items: flex-start; /* Align items to the left */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  height: 100%; /* Fill entire height of the container */
+  justify-content: flex-end; /* Align items to the bottom */
+  left: 8%; /* Align to the left side */
+  right: 10%;
+  position: absolute;
+  top: 9%; /* Adjust vertical positioning */
+  transform: translateY(-50%);
+  width: 100%; /* Adjust width as needed */
+  z-index: 1;
+}
+
+/* Content container */
+.intro-content {
+  align-items: flex-start;
+  color: black; /* Example content styling */
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: flex-start;
+  margin-bottom: 16rem;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1; /* Ensures the content is above the background */
+}
+
+.intro-content::after,
+.intro-content::before {
+  box-sizing: border-box;
+}
+
+/* Main heading style */
+.intro-content .main-heading {
+  h2 {
+    text-align: left;
+  }
+
+  line-height: 50px;
+  font-size: clamp(16px, 2vw, 22px); /* Fluid typography */
+  // margin-bottom: 10px;
+  width: 100%; /* Ensure full width of parent container */
+  top: 0; /* Position main heading at the top */
+  margin-left: 6.5rem;
+}
+
+/* Icon heading style */
+.intro-content .icon-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  width: 100%; /* Allow width to adjust based on content */
+  max-width: 240px; /* Limit maximum width */
+  height: 26px;
+  justify-content: center;
+  padding: 0;
+  margin-left: 6.5rem;
+  background: linear-gradient(0.45turn, #bbd8e6, #ebf8e1, #f3d1ad);
+  overflow: hidden; /* Ensure text doesn't overflow */
+}
+
+.intro-content .icon-heading h3 {
+  font-size: clamp(9px, 1.5vw, 14px); /* Fluid typography */
+  white-space: nowrap; /* Prevent wrapping */
+  overflow: hidden; /* Hide overflow text */
+  text-overflow: ellipsis; /* Display ellipsis for overflow text */
+}
+
+/* Video container */
+.intro-video-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  margin-left: 12rem;
+}
+
+.intro-video-container .intro-prop-video {
+  border-radius: 12px;
+  max-width: 100%; /* Ensure video scales with container */
+  height: 300px; /* Maintain aspect ratio */
+  width: 500px;
+}
+
+/* Responsive design */
+
+// @media (max-width:1900px) {
+// .intro-container{
+//   gap: 28rem;
+// }
+// }
+@media (min-width: 2000px) and (max-width: 2600px) {
+  .intro-container {
+    gap: 50rem;
+  }
+}
+@media (min-width: 1600px) and (max-width: 2000px) {
+  .intro-container {
+    gap: 30rem;
+  }
+}
+
+@media (max-width: 1600px) {
+  .intro-container {
+    gap: 16rem; /* Adjusted gap for screens up to 1600px */
+  }
+}
+
+@media (max-width: 1200px) {
+  .intro-container {
+    flex-direction: column;
+    height: auto;
+    gap: 3rem;
+    padding: 0; /* Adjust padding for smaller screens */
+  }
+
+  .sub-title {
+    display: block; /* Show subtitle on smaller screens */
+  }
+
+  .slidingVertical {
+    position: static;
+    transform: none;
+    width: auto;
+    margin: auto;
+    padding: 0 20px; /* Adjust padding for smaller screens */
+    text-align: center; /* Center align text */
+  }
+
+  .intro-content {
+    margin-left: 0;
+    margin-bottom: 4rem; /* Adjusted margin bottom */
+    padding: 0 10px;
+    text-align: center; /* Center align text */
+  }
+
+  .intro-video-container {
+    margin-left: 0;
+    margin-bottom: 4rem; /* Adjusted bottom margin */
+  }
+}
+
+@media (max-width: 992px) {
+  .intro-container {
+    gap: 3rem; /* Adjusted gap for screens up to 992px */
+  }
+  .intro-content .main-heading {
+    margin-left: 0;
+  }
+
+  .intro-content .icon-heading {
+    margin-left: 0;
+  }
+  .intro-video-container {
+    margin-bottom: 3rem; /* Adjusted bottom margin */
+    margin: 2rem;
+  }
+  .slidingVertical {
+    position: relative;
+    margin-bottom: 2rem;
+
+    .sub-title {
+      font-size: 18px;
+      position: absolute;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .intro-container {
+    gap: 1.5rem; /* Adjusted gap for screens up to 768px */
+  }
+
+  .intro-content {
+    margin-bottom: 3rem; /* Adjusted margin bottom */
+  }
+
+  .intro-video-container {
+    margin-bottom: 2rem; /* Adjusted bottom margin */
+    margin: 2rem;
+    video {
+      max-width: 69%;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .intro-container {
+    gap: 3rem; /* Adjusted gap for screens up to 576px */
+    padding-left: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .intro-content {
+    margin-bottom: 2rem; /* Adjusted margin bottom */
+    align-items: center;
+  }
+
+  .intro-video-container {
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+    margin-left: 0;
+    width: 72%; /* Adjusted bottom margin */
+    video {
+      max-width: 100%;
+      height: 200px !important;
+    }
+  }
+
+  .sub-title {
+    font-size: 14px;
+  }
+
+  .icon-heading {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro-container {
+      .intro-heading {
+      .slidingVertical {
+        left: 2%;
+      }
+    }
+    .intro-video-container {
+      width: 77%;
+      margin-right: 0;
+      .intro-prop-video {
+        height: 220px;
+      }
+    }
+  }
+}
+
+@media (max-width: 415px) {
+  .intro-container {
+    .intro-heading {
+      .slidingVertical {
+        left: 4%;
+      }
+    }
+    .intro-video-container {
+      width: 72%;
+      .intro-prop-video {
+        height: 200px;
+      }
+    }
+  }
+}
+
+@media (max-width: 395px) {
+  .intro-container {
+    .intro-heading {
+      .slidingVertical {
+        left: 3%;
+      }
+    }
+    .intro-video-container {
+      width: 70%;
+      .intro-prop-video {
+        height: 185px;
+      }
+    }
+  }
+}

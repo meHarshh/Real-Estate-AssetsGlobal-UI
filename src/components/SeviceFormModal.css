@@ -1,0 +1,89 @@
+/* Modal.css */
+
+.service-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.service-modal-content {
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+}
+
+.service-close-button {
+  position: absolute;
+  top: 34px !important;
+  right: 5px !important;
+  background: #7ab945;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: transparent;
+    color: #7ab945;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-modal-content {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 580px) {
+  .service-close-button {
+    top: 6% !important;
+    right: -5% !important;
+    font-size: 24px;
+    padding: 3px 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-modal-content {
+    width: 50%;
+    max-width: 100%;
+    padding: 10px; /*Adjusted padding for smaller screens */
+  }
+
+  .service-close-button {
+    top: 5px;
+    right: 5px;
+    font-size: 24px;
+    padding: 3px 6px;
+  }
+}
+
+@media (max-width: 440px) {
+  .service-modal-content {
+    margin-right: 2.2rem;
+  }
+}
+
+@media (max-width: 415px) {
+  .service-modal-content {
+    margin-right: 2rem;
+  }
+}
+
+@media (max-width: 376px) {
+  .service-modal-content {
+    margin-right: 2.5rem;
+  }
+}

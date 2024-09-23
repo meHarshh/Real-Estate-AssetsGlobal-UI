@@ -1,0 +1,230 @@
+.spm {
+  height: 100%;
+  left: 0;
+  position: fixed;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+  background-color: rgba($color: #ffffff, $alpha: 0.5);
+  display: flex;
+  align-items: end;
+  justify-content: center;
+
+  .custom-modal-container {
+    width: 25%;
+    position: relative;
+
+    .spm-h4 {
+      position: absolute;
+      // top: 7.5%;
+      // left: 29%;
+      // text-align: center;
+    }
+
+    .brochure-heading {
+      top: 8.5%;
+      left: 29%;
+    }
+
+    .contact-heading {
+      top: 8.5%;
+      left: 42%;
+    }
+
+    .spm-button {
+      color: #7ab945;
+      // border-radius: 2px;
+      border: none;
+      background: none;
+      position: absolute;
+      right: 4%;
+      top: 10.5%;
+
+      svg {
+        font-size: 22px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 1852px) and (max-width: 1965px) {
+  .spm {
+    .custom-modal-container {
+      top: -31%;
+      .brochure-heading {
+        top: 8.5%;
+        left: 34%;
+      }
+
+      .contact-heading {
+        top: 8.5%;
+        left: 44%;
+      }
+
+      .spm-button {
+        right: 4.3rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1600px) {
+  .spm {
+    top: 0;
+    .custom-modal-container {
+      .spm-button {
+        right: 3%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  .spm {
+    .custom-modal-container {
+      top: -3%;
+    }
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .spm {
+    .custom-modal-container {
+      top: -8%;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .spm {
+    padding: 1rem 0.5rem;
+  }
+}
+
+@media (max-width: 1050px) {
+  .spm {
+    .custom-modal-container {
+      top: -55%;
+      .spm-button {
+        right: -11%;
+      }
+      .brochure-heading {
+        right: 27%;
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .spm {
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .spm {
+    flex-direction: column;
+    padding: 0.5rem;
+    .custom-modal-container {
+      width: 45.6%;
+      .brochure-heading {
+        top: 8.5%;
+        left: 28%;
+      }
+
+      .contact-heading {
+        top: 8.5%;
+        left: 41%;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .spm {
+    padding: 0.5rem 0.25rem;
+    .custom-modal-container {
+      width: 71%;
+
+      .spm-button {
+        padding: 4px 4px 0;
+        right: -30px;
+        top: 11.5%;
+      }
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .spm {
+    width: 98%;
+
+    .custom-modal-container {
+      top: 1%;
+      .spm-button {
+        right: 6.5%;
+      }
+      .brochure-heading {
+        left: 23%;
+      }
+      .contact-heading {
+        left: 39%;
+      }
+    }
+  }
+}
+@media (max-width: 415px) {
+  .spm {
+    .custom-modal-container {
+      .spm-button {
+        right: 4.5%;
+      }
+      .brochure-heading {
+        left: 21%;
+      }
+      .contact-heading {
+        left: 36%;
+      }
+    }
+  }
+}
+
+@media (max-width: 391px) {
+  .spm {
+    .custom-modal-container {
+      top: 5%;
+      .spm-button {
+        right: 1.5%;
+      }
+      .brochure-heading {
+        left: 17%;
+      }
+      .contact-heading {
+        left: 36%;
+      }
+    }
+  }
+}
+
+@media (max-width: 376px) {
+  .spm {
+    width: 107%;
+    .custom-modal-container {
+      top: 20%;
+      right: 5.5%;
+      .spm-button {
+        right: 9%;
+      }
+      .brochure-heading {
+        left: 17%;
+      }
+      .contact-heading {
+        left: 38%;
+      }
+    }
+  }
+}

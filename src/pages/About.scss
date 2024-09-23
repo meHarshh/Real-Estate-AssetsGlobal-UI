@@ -1,0 +1,16 @@
+.about-main-container {
+  .fade-up {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .fade-up.aos-animate {
+    opacity: 1;
+  }
+
+  // .video-why-us{
+  //   display: flex;
+  //   margin-bottom: 4rem;
+  // }
+}
+

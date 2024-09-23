@@ -1,0 +1,151 @@
+.project-container {
+  width: 70vw; /* Container width */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; /* Stack carousel and controls vertically */
+  align-items: center;
+  justify-content: center;
+}
+
+.project-carousel {
+  width: 100%;
+  position: relative; /* Position carousel relative to its container */
+}
+
+.project-card {
+  width: 90%; /* Reduce width */
+  height: 150px; /* Reduce height */
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border-radius: 10px;
+}
+.project-card-count p{
+  font-size: 13px;
+  font-weight: 700;
+}
+.project-card-body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 1;
+}
+
+.project-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card-info {
+  position: absolute;
+  z-index: 3;
+  color: white;
+  text-align: center;
+  transition: opacity 0.3s ease-in-out;
+  font-size: 1.5em;
+  background: none; /* Remove background */
+  padding: 0;
+}
+
+.project-card-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px; /* Reduce height for the on-hover display */
+  padding: 5px; /* Reduce padding */
+  background: rgba(255, 255, 255, 1);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(100%);
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px rgba(80, 80, 80, 0.2);
+}
+
+.project-card:hover .project-card-img {
+  transform: translateY(-10px); /* Slightly move the image up */
+}
+
+.project-card:hover .project-card-count {
+  transform: translateY(0); /* Reveal the property count */
+}
+
+.slick-slider {
+  position: relative;
+  padding-bottom: 50px; /* Add padding to make space for controls */
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex !important;
+  justify-content: center;
+  width: 100%;
+}
+
+.slick-dots li {
+  margin: 0 5px; /* Space between dots */
+}
+
+.slick-dots button {
+  font-size: 0; /* Hide the default button content */
+  width: 20px; /* Further increase width of dots */
+  height: 20px; /* Further increase height of dots */
+  border-radius: 50%;
+  background-color: gray; /* Set the dot color to gray */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slick-dots button:hover,
+.slick-dots .slick-active button {
+  /* background-color: black;  */
+  /* Active state color */
+}
+@media (max-width: 768px) {
+  .project-card {
+    height: 150px; /* Adjust height for smaller screens */
+  }
+
+  .project-card-info {
+    font-size: 1.2em;
+  }
+
+  .project-card-count {
+    font-size: 0.9em;
+    height: 20px; /* Adjust height for smaller screens */
+    padding: 3px; /* Adjust padding for smaller screens */
+  }
+}

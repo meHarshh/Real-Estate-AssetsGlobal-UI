@@ -1,0 +1,171 @@
+/* src/components/PopupAllPgForm.scss */
+
+.popup-all-pg-modal {
+  position: fixed;
+  z-index: 1010;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-all-pg-modal-content {
+  //   background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  // border: 1px solid #888;
+  width: 100%;
+  height: auto;
+  //   max-width: 600px;
+  border-radius: 8px;
+  // box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.popup-all-pg-form-p {
+  position: absolute;
+  top: 12%;
+  left: 46.5%;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.popup-all-pg-modal-close-btn {
+  color: #7ab945;
+  position: absolute;
+  top: 11%;
+  right: 37%;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.popup-all-pg-modal-close-btn:hover,
+.popup-all-pg-modal-close-btn:focus {
+  color: black;
+  text-decoration: none;
+}
+
+@media (max-width: 2800px) {
+  .popup-all-pg-modal-close-btn {
+    right: 42%;
+  }
+}
+
+@media (max-width: 2200px) {
+  .popup-all-pg-modal-close-btn {
+    right: 42.5%;
+    top: 13.8%;
+  }
+  .popup-all-pg-form-p {
+    left: 47%;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1930px) {
+  .popup-all-pg-modal-close-btn {
+    right: 41%;
+  }
+}
+
+@media (min-width: 1500px) and (max-width: 1600px) {
+  .popup-all-pg-modal-close-btn {
+    right: 39%;
+  }
+  .popup-all-pg-form-p {
+    left: 46%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .popup-all-pg-modal-close-btn {
+    right: 39%;
+  }
+  .popup-all-pg-form-p {
+    left: 46%;
+  }
+}
+
+@media (max-width: 1025px) {
+  .popup-all-pg-modal-close-btn {
+    right: 34%;
+  }
+  .popup-all-pg-form-p {
+    left: 44%;
+  }
+}
+
+@media (max-width: 990px) {
+  .popup-all-pg-modal-close-btn {
+    right: 33%;
+  }
+  .popup-all-pg-form-p {
+    left: 42%;
+  }
+}
+
+@media (max-width: 768px) {
+  .popup-all-pg-modal-close-btn {
+    right: 31%;
+    top: 12%;
+  }
+  .popup-all-pg-form-p {
+    left: 42%;
+  }
+}
+
+@media (max-width: 580px) {
+  .popup-all-pg-modal-close-btn {
+    right: 26%;
+    top: 12%;
+  }
+}
+@media (max-width: 500px) {
+  .popup-all-pg-modal-close-btn {
+    right: 12%;
+  }
+}
+@media (max-width: 440px) {
+  .popup-all-pg-modal-close-btn {
+    right: 22%;
+    top: 13%;
+  }
+  .popup-all-pg-form-p {
+    left: 36.5%;
+    top: 12.5%;
+  }
+}
+
+@media (max-width: 415px) {
+  .popup-all-pg-modal-close-btn {
+    right: 20%;
+    top: 13%;
+  }
+}
+@media (max-width: 395px) {
+  .popup-all-pg-modal-close-btn {
+    right: 19%;
+    top: 13%;
+  }
+  .popup-all-pg-form-p {
+    left: 35.5%;
+    top: 12.5%;
+  }
+}
+
+@media (max-width: 376px) {
+  .popup-all-pg-modal-close-btn {
+    right: 19%;
+  }
+}
+
+@media (max-width: 350px) {
+  .popup-all-pg-modal-close-btn {
+    right: 15%;
+  }
+}

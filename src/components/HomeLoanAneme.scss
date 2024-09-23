@@ -1,0 +1,32 @@
+.key_points {
+  .key-points-h2 {
+    color: "#7ab945";
+    font-size: "2.6rem";
+    font-weight: "800";
+    letter-spacing: "1.82px";
+    margin: "0";
+    text-shadow: "2px 2px 2px #071739, 0 0 4em rgba(7, 7, 7, 0.3), 0 0 0.6em black";
+  }
+}
+
+.loan-animation-heading-h2 {
+  font-size: 2.6rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 1.82px;
+}
+
+.loan-animation-heading-p {
+  font-size: 2rem;
+  letter-spacing: 2.5px;
+  font-weight: 800;
+}
+
+@media (max-width: 480px) {
+  .loan-animation-heading-h2 {
+    margin-left: 0 !important;
+    font-size: 1.8rem !important;
+  }
+  .loan-animation-heading-p {
+    font-size: 1.5rem;
+  }
+}

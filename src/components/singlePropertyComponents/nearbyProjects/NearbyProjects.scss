@@ -1,0 +1,131 @@
+.s-property-nearby-projects-container {
+  margin-left: 12.2rem;
+  width: 100%;
+
+  h2 {
+    text-align: left;
+    margin-left: 2rem;
+  }
+
+  .s-prop-nearby-projects-content {
+    display: flex;
+    gap: 2rem;
+    overflow: auto;
+    width: 80%;
+  }
+}
+
+// .alice-carousel__wrapper {
+//   padding-left: 4px;
+// }
+
+// .alice-carousel__stage-item {
+//   width: 440px !important;
+// }
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  .s-property-nearby-projects-container {
+    margin-left: 10rem;
+  }
+}
+
+@media (max-width: 1025px) {
+  .s-property-nearby-projects-container {
+    margin-left: 2rem;
+    width: 90%;
+    h2 {
+      margin-left: 4rem;
+    }
+  }
+  .alice-carousel__stage-item__active__target {
+    width: 385px;
+  }
+}
+
+@media (max-width: 992px) {
+  .s-property-nearby-projects-container {
+    margin-left: 2rem;
+
+    .s-prop-nearby-projects-content {
+      width: 90%;
+    }
+  }
+
+  .alice-carousel__wrapper {
+    padding-left: 4px;
+  }
+
+  .alice-carousel__stage-item {
+    width: 440px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .s-property-nearby-projects-container {
+    margin-left: 3rem;
+    width: 86%;
+
+    .s-prop-nearby-projects-content {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+
+  .alice-carousel__stage-item {
+    width: auto !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .s-property-nearby-projects-container {
+    margin-left: 2rem;
+    width: 57%;
+
+    .s-prop-nearby-projects-content {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .s-property-nearby-projects-container {
+    margin-left: 2rem;
+    width: 70%;
+
+    .s-prop-nearby-projects-content {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .s-property-nearby-projects-container {
+    margin-left: 0rem;
+    width: 93%;
+    .s-prop-nearby-projects-content {
+      width: 100%;
+      margin-left: 1rem;
+    }
+  }
+}
+
+@media (max-width: 415px) {
+  .s-property-nearby-projects-container {
+    .s-prop-nearby-projects-content {
+      margin-left: 0.6rem;
+    }
+  }
+}
+
+@media (max-width: 395px) {
+  .s-property-nearby-projects-container {
+    width: 97%;
+    h2 {
+      margin-left: 1rem;
+    }
+    .s-prop-nearby-projects-content {
+      margin-left: 0;
+    }
+  }
+}

@@ -1,0 +1,121 @@
+.stat_container {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.stat_background {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.stat_image_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.stat_title {
+  margin-bottom: 36px;
+}
+
+.stat_title h1 {
+  font-size: 1.8rem;
+  font-weight: bolder;
+  line-height: 1.5;
+  letter-spacing: 0.3rem;
+}
+
+.stat_title .stat-title-span {
+  color: #7ab945;
+}
+
+.stat_values {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.stat_card:hover {
+  position: relative;
+  background-color: transparent;
+  border-radius: 5px;
+  transform: translateY(-5px) scale(1.05);
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.stat_card h3 {
+  letter-spacing: 0.2rem;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.tracking-in-contract-bck {
+  animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+}
+
+@keyframes tracking-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    transform: translateZ(400px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .stat_values {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  /* .stat_container {
+    height: 75vh;
+  } */
+  .stat_background {
+    height: 75vh;
+  }
+}
+
+@media (max-width: 500px) {
+  .stat_title h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  .stat_values {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
+  .statistics-happy-p-tag {
+    width: 105%;
+  }
+}
+@media screen and (max-width:390px) {
+  .stat_container{
+    height: 70vh;
+  }
+  
+}

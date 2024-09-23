@@ -1,0 +1,202 @@
+.clients-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px rgb(212, 208, 208) solid;
+  border-top: 2px rgb(212, 208, 208) solid;
+  background-color: white;
+  width: 100%;
+  height: auto;
+  gap: 3.5rem;
+  padding: 0 20px; /* Ensure no content touches the screen edges */
+  box-sizing: border-box; /* Include padding in width calculations */
+
+  .client-partners,
+  .bank-partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%; /* Ensure sections take full width */
+  }
+
+  .clients-grid,
+  .bank-partners-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px; /* Default gap */
+    box-sizing: border-box; /* Include padding in width calculations */
+  }
+
+  .client-partners {
+    .clients-grid {
+      max-width: 1400px;
+      gap: 40px;
+      margin-bottom: 2rem;
+
+      .client-image {
+        width: 120px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 10px;
+       &:hover{
+        transform: scale(1.5);
+       }
+      }
+
+    }
+  }
+
+  .bank-partners {
+    .bank-partners-grid {
+      gap: 60px;
+      margin-bottom: 2rem;
+
+      .bank-partner-image {
+        width: 100px;
+        height: 90px;
+        object-fit: contain;
+      }
+    }
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 1200px) {
+    padding: 0 10px; /* Adjust padding for smaller screens */
+    height: auto; /* Adjust height for smaller screens */
+
+    .client-partners {
+      margin-top: 1rem; /* Adjust top margin */
+      .clients-grid {
+        flex-wrap: wrap;
+        gap: 30px;
+        // margin: 5rem;
+      }
+    }
+
+    .bank-partners {
+      .bank-partners-grid {
+        margin-bottom: 5rem; /* Adjust bottom margin */
+        gap: 2rem;
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    .client-partners .clients-grid {
+      gap: 20px;
+
+      .client-image {
+        width: 100px;
+        height: 70px;
+      }
+    }
+
+    .bank-partners .bank-partners-grid {
+      gap: 40px;
+
+      .bank-partner-image {
+        width: 90px;
+        height: 80px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    gap: 2rem; /* Adjust gap between sections */
+
+    .client-partners {
+      margin-top: 1rem;
+    }
+
+    .client-partners .clients-grid {
+      gap: 15px;
+
+      .client-image {
+        width: 90px;
+        height: 60px;
+      }
+    }
+
+    .bank-partners {
+      margin-bottom: 0;
+
+      .bank-partners-grid {
+        gap: 30px;
+
+        .bank-partner-image {
+          width: 80px;
+          height: 70px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    gap: 2rem; /* Adjust gap between sections */
+    height: auto; /* Ensure height adjusts to content on smaller screens */
+    padding: 0 10px; /* Further reduce padding for extra small screens */
+
+    .client-partners {
+      margin-top: 1rem;
+    }
+    .client-partners .clients-grid {
+      gap: 1.5rem;
+
+      .client-image {
+        width: 80px;
+        height: 50px;
+      }
+    }
+
+    .bank-partners {
+      margin-bottom: 0;
+    }
+
+    .bank-partners .bank-partners-grid {
+      gap: 20px;
+
+      .bank-partner-image {
+        width: 70px;
+        height: 60px;
+      }
+    }
+  }
+
+  @media (max-width: 400px) {
+    gap: 2rem; /* Further reduce gap for very small screens */
+
+    .client-partners {
+      margin-top: 2rem;
+    }
+    .client-partners .clients-grid {
+      gap: 1.5rem;
+
+      .client-image {
+        width: 70px;
+        height: 45px;
+      }
+    }
+
+    .bank-partners {
+      margin-bottom: 0;
+    }
+    .bank-partners .bank-partners-grid {
+      gap: 15px;
+
+      .bank-partner-image {
+        width: 60px;
+        height: 50px;
+      }
+    }
+  }
+}
+@media screen and (max-width:390px) {
+  .clients-container{
+   width: 100%;
+  }
+}

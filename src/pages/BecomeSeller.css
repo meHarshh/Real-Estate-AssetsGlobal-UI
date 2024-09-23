@@ -1,0 +1,586 @@
+#property-filter-container {
+  flex: 0.6;
+  /* min-height: 80vh; */
+  /* or any desired height */
+  /* overflow-y: auto; */
+  padding: 1rem;
+  /* height: 70vh; */
+  /* background-color: white; */
+  margin: 1rem;
+  border-radius: 5px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+}
+
+#property-filter-container .filter-container {
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid #7ab945;
+  border-radius: 8px;
+  padding: 10px;
+  /* overflow-y: auto; */
+  /* display: none; */
+}
+
+#property-filter-container .filter-container .filter-header {
+  background-color: #7ab945;
+  color: white;
+  /* padding: 5px; */
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-content {
+  margin-top: -10px;
+}
+
+.filter-section {
+  margin-bottom: 15px;
+}
+
+.filter-section label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.filter-section input[type="text"],
+.filter-section input[type="email"],
+.filter-section input[type="date"],
+.filter-section textarea {
+  width: 80%;
+  padding: 8px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.selection-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.selection-box .option {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.selection-box input[type="button"] {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #fff;
+  min-width: calc(100% - 22px);
+  box-sizing: border-box;
+}
+
+.selection-box input[type="button"].selected {
+  background-color: #7ab945;
+  color: #fff;
+  border-color: #7ab945;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #7ab945;
+  color: #fff;
+}
+
+.filter-buttons button[type="button"] {
+  background-color: #dc3545;
+}
+
+.service_container {
+  height: 80vh;
+  /* position: relative; */
+}
+
+.service_background {
+  height: 80vh;
+  position: relative;
+  display: flex;
+  gap: 1rem;
+  z-index: 0;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 108%;
+    height: 100%;
+    background-image: url("../Images/become-seller-bg2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -1;
+  }
+}
+
+.service_background::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.3
+  ); /* Adjust opacity here for lighter effect */
+  z-index: 1;
+}
+
+.main_aneme_div {
+  flex: 1;
+  width: 80%;
+  align-self: center;
+  justify-self: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2; /* Ensure content is above the overlay */
+}
+
+.main_aneme_div h2 {
+  color: black;
+  letter-spacing: 1px;
+  font-size: 32px;
+  margin-bottom: 5rem;
+}
+
+.aneme {
+  margin: 3rem;
+}
+p {
+  text-align: center;
+}
+.main_aneme_div div {
+  height: 200px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+.submit-button {
+  height: 2rem;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  width: 6rem;
+  color: white;
+}
+.submit-button {
+  background-color: #7ab945;
+}
+.seller-form-clear-button {
+  border-radius: 6px;
+  color: #071739;
+  background-color: white;
+}
+
+.become-seller-form-container {
+  flex-direction: column;
+}
+.become-seller-contact-form {
+  margin-top: 2rem;
+  background-color: rgb(0, 0, 0, 0.6);
+  width: 65%;
+  height: 90%;
+  display: flex;
+  /* border: 1px solid #7ab945; */
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+  padding: 1.8rem 3rem 1.8rem 1.8rem;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    margin-left: 1.3rem;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-top: 0;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .become-seller-label {
+    color: #fff;
+    font-weight: 600;
+  }
+}
+
+.become-seller-contact-img {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.become-seller-form-item {
+  width: 100%;
+  height: 1rem;
+  border: 1px solid gray;
+  border-radius: 5px;
+  /* color: gray; */
+  color: black;
+  font-size: 1rem;
+  margin-left: 0;
+}
+
+#become-seller-form-submit {
+  background-color: #7ab945;
+  border: none;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  height: 35px;
+  width: 84%;
+  margin-left: 1.4rem;
+  /* padding: 0.2rem; */
+}
+
+#become-seller-form-submit:hover {
+  background-color: white;
+  color: #7ab945;
+  border: 1px solid #7ab945;
+}
+
+#otp-form-submit {
+  height: 2rem;
+  align-self: center;
+  width: 200px;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #7ab945;
+  border: none;
+  border-radius: 5px;
+}
+#otp-form-submit:hover {
+  color: #7ab945;
+  background-color: white;
+  border: 1px solid #7ab945;
+}
+
+/* property details form  */
+
+/* Ensure the parent container has a fixed height and allows scrolling */
+.scrollable-form .filter-container {
+  margin-top: -25px;
+  max-height: 50vh; /* Adjust the height as needed */
+  overflow-y: auto;
+}
+
+.filter-container {
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.filter-header {
+  background-color: #333;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 5px 5px 0 0;
+}
+
+.filter-content {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+}
+
+.filter-section {
+  margin-bottom: 1rem;
+}
+
+.selection-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.option {
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-button {
+  background-color: #7ab945;
+  color: white;
+  width: auto;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: white;
+  color: #7ab945;
+  border: 1px solid #7ab945;
+}
+
+.selected {
+  background-color: #7ab945;
+  color: white;
+}
+
+.become-seller-form-container {
+  width: 80%;
+}
+
+/* Responsive design */
+
+@media (min-width: 1900px) and (max-width: 2000px) {
+  #property-filter-container {
+    align-items: center;
+    margin-bottom: 6rem;
+  }
+  .become-seller-form-container {
+    flex-direction: row;
+  }
+  .become-seller-contact-form {
+    width: 50%;
+    flex-direction: row;
+    /* align-items: center; */
+  }
+}
+
+@media (max-width: 1200px) {
+  .service_container,
+  .service_background,
+  .main_aneme_div {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  #property-filter-container {
+    flex: 1;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    height: auto;
+  }
+
+  .become-seller-contact-form {
+    width: 40%;
+    height: auto;
+    padding: 1rem;
+    padding-left: 0;
+  }
+
+  .submit-button {
+    font-size: 16px;
+    padding: 0.5rem;
+  }
+
+  .filter-section input[type="text"],
+  .filter-section input[type="email"],
+  .filter-section input[type="date"],
+  .filter-section textarea {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .become-seller-contact-form {
+    width: 40%;
+    margin-top: 0;
+    p {
+      margin-left: 0;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .become-seller-contact-form {
+    width: 40%;
+    /* margin-left: 8rem; */
+    padding: 2.5rem 1rem;
+    padding-left: 0;
+    p {
+      margin-left: 1rem;
+    }
+  }
+  #become-seller-form-submit {
+    width: 63%;
+  }
+}
+
+@media (max-width: 768px) {
+  .service_background::before {
+    background-size: cover;
+  }
+
+  .aneme {
+    margin: 1.5rem;
+  }
+
+  .submit-button {
+    font-size: 14px;
+  }
+
+  #property-filter-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+  }
+
+  .become-seller-form-container {
+    width: 67%;
+  }
+
+  /* .become-seller-contact-form {
+    width: 100%;
+    padding: 0.5rem;
+  } */
+  .become-seller-contact-form {
+    width: 55%;
+    /* margin-left: 8rem; */
+    padding: 2.5rem 2.5rem 2.5rem 1rem;
+  }
+  #become-seller-form-submit {
+    width: 67%;
+  }
+}
+
+@media (max-width: 500px) {
+  .service_container {
+    height: 100vh;
+  }
+  .service_background {
+    height: 100vh;
+  }
+
+  .become-seller-form-container {
+    width: 80%;
+  }
+
+  .become-seller-contact-form {
+    width: 75%;
+    padding: 2.5rem;
+    margin-left: 0;
+
+    p {
+      margin: 0;
+    }
+    .become-seller-label {
+      font-size: 14px;
+    }
+    div {
+      width: 100%;
+      input {
+        width: 85%;
+        /* box-sizing: border-box; */
+      }
+    }
+    #become-seller-form-submit {
+      margin: 0;
+      width: 93%;
+    }
+  }
+
+  .main_aneme_div {
+    flex: none;
+    h2 {
+      font-size: 28px;
+    }
+  }
+
+  #property-filter-container {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    flex-direction: row;
+    height: 100vh;
+  }
+
+  .filter-section input[type="text"],
+  .filter-section input[type="email"],
+  .filter-section input[type="date"],
+  .filter-section textarea {
+    width: 100%;
+  }
+
+  .submit-button {
+    font-size: 12px;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .become-seller-contact-form {
+    width: 71%;
+    .become-seller-label {
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .service_container,
+  .service_background {
+    height: 124vh;
+  }
+}
+
+/* become a seller animation styles */
+
+.animation-heading-h2 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  letter-spacing: 1.82px;
+}
+
+.animation-heading-p {
+  font-size: 1.8rem;
+  letter-spacing: 1.82px;
+  margin: 0.5rem;
+}
+
+@media (max-width: 440px) {
+  .animation-heading-h2 {
+    font-size: 2.2rem !important;
+  }
+  .animation-heading-p {
+    font-size: 1.2rem;
+    letter-spacing: 1.82px;
+    margin: 0.5rem;
+  }
+}

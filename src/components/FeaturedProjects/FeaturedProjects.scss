@@ -1,0 +1,199 @@
+// .featured-projects-container {
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr); // Adjust the column layout
+//     gap: 16px; // Space between cards
+//     justify-content: center; // Center the grid items
+//     padding: 16px; // Padding around the container
+// }
+
+.property-card-wrapper {
+    max-width: 100%;
+    margin: 1rem auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    justify-content: start;
+    transition: transform 0.3s, box-shadow 0.3s; // Transition for resize and shadow
+}
+
+.property-card-wrapper:hover {
+    transform: scale(1.05); // Resize card on hover
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); // Enhance shadow on hover
+}
+
+.property-card-header {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.prop-grid-property-card-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0; /* Rounded corners for the top */
+}
+
+.property-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: left;
+    position: relative; /* To ensure hover details are correctly positioned */
+}
+
+.property-card-content .details-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.property-card-content .details-row div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.property-card-content .details-row p,
+.property-card-content .details-row h4 {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.property-card-content .details-row h4 {
+    color: #333;
+}
+
+.property-card-content .details-row p {
+    color: #666;
+}
+
+.property-details-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.property-card-wrapper:hover .property-details-hover {
+    opacity: 1; /* Show details on hover */
+}
+
+.card-button-container {
+    width: 100%;
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+
+.card-button-container .card-view-button {
+    background-color: #7ab945;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+.card-button-container .card-view-button:hover {
+    background-color: #acd4b4;
+    color: #7ab945;
+    border: 1px solid #acd4b4;
+}
+
+.card-button-container .contact-button {
+    background-color: #071739 !important;
+    color: white !important;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card-button-container .contact-button:hover {
+    background-color: white !important;
+    color: #071739 !important;
+    border: 1px solid #071739 !important;
+}
+
+.alice-carousel {
+    position: relative;
+}
+
+.custom-prev-btn,
+.custom-next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 24px; // Make the icon bigger
+    z-index: 10;
+    border-radius: 50%; // Make the background rounded
+    width: 40px; // Set smaller width
+    height: 40px; // Set smaller height
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+
+.custom-prev-btn {
+    left: 10px; // Position the previous button to the left
+}
+
+.custom-next-btn {
+    right: 10px; // Position the next button to the right
+}
+
+.custom-prev-btn:hover,
+.custom-next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8); // Change background on hover
+}
+
+/* Media Queries */
+
+@media (min-width: 1024px) {
+    .featured-projects-container {
+        grid-template-columns: repeat(2, 1fr); // 2 columns for large screens
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .featured-projects-container {
+        grid-template-columns: repeat(2, 1fr); // 2 columns for medium screens
+    }
+}
+
+@media (max-width: 767px) {
+    .featured-projects-container {
+        grid-template-columns: 1fr; // 1 column for small screens
+    }
+}

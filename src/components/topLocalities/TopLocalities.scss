@@ -1,0 +1,96 @@
+.top-localities-main-container {
+  margin: 3rem 0;
+  .top-localities-heading {
+    h2 {
+      text-align: center;
+    }
+  }
+
+  .top-localities-card-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+
+    .top-localities-card {
+      width: fit-content;
+      text-decoration: none;
+      border: 2px solid #faf7f5;
+      border-radius: 8px;
+      position: relative;
+
+      .top-localities-img {
+        width: 250px;
+        height: 130px;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        border-radius: 8px 8px 0 0;
+        transition: background-size 0.4s ease;
+
+        &:hover {
+          background-size: 110%;
+        }
+
+        .top-localities-div-img-details {
+          position: absolute;
+          top: 66%;
+          left: 0;
+          right: 0;
+          h3,
+          h5 {
+            padding-left: 0.5rem;
+            text-shadow: 2px 1px #000;
+            text-align: left;
+            margin: 0;
+            color: #fff;
+          }
+
+          h3 {
+            font-size: 1rem;
+          }
+          h5 {
+            width: fit-content;
+            border-radius: 4px;
+            backdrop-filter: blur(6px);
+            font-size: 0.8rem;
+            padding-bottom: 0.2rem;
+            // padding: 0 2rem 0 0;
+            padding-right: 2rem;
+            span {
+              font-size: 0.6rem;
+            }
+          }
+        }
+      }
+      .top-localities-details {
+        display: flex;
+        flex-direction: column;
+        border-radius: 0 0 8px 8px;
+        // justify-content: flex-start;
+        padding: 0.5rem;
+        align-items: flex-start;
+        p {
+          margin: 0;
+          font-size: 0.9rem;
+          color: #000;
+
+          &:last-child {
+            display: flex;
+            align-items: center;
+            gap: 0.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .top-localities-card-container {
+    flex-direction: column;
+  }
+  .img-details-1 {
+    top: 10%;
+  }
+}

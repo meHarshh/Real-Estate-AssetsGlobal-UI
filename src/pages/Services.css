@@ -1,0 +1,315 @@
+/* General Styles */
+.services_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 1rem;
+}
+.services_container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 25%;
+  padding: 1rem;
+  /* border:1px solid orange ; */
+  border-radius: 15px;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  transition: border-bottom 0.3s ease, transform 0.3s ease;
+
+  &:last-child {
+    gap: 2.35rem;
+
+    h2 {
+      margin-bottom: 0;
+    }
+  }
+}
+.services_container p {
+  text-align: center;
+  font-size: 18px;
+}
+.services_container h2 {
+  color: black;
+  transition: color 0.3s ease;
+}
+.enq_btn {
+  height: 3rem;
+  width: 50%;
+  background-color: #7ab945;
+  color: white;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.services_container div:hover {
+  border-bottom: 4px solid #7ab945;
+}
+/* .services_container h2:hover{
+    color: #009933;
+} */
+
+.services_container div:hover h2 {
+  color: #7ab945;
+}
+
+.services_container div:hover .enq_btn {
+  box-shadow: 0 0 20px rgba(122, 185, 69, 0.7);
+  transform: scale(1.05);
+}
+
+.what-we-do-container {
+  margin-top: 3rem;
+}
+.we_do_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.buttons_row {
+  width: 90%;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-evenly;
+  /* border: 1px solid blue; */
+}
+
+.active,
+.non-active {
+  width: 100%;
+}
+.we_do_container button {
+  background-color: #7ab945;
+  border: 1px #7ab945;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+.we_do_container button.active,
+.we_do_container button:hover {
+  background-color: #7ab945;
+  color: #fff;
+  border: 1px #7ab945 !important;
+  /* transform: scale(1.06, 1.06); */
+}
+
+.we_do_container button.active::after {
+  content: "";
+  position: absolute;
+  bottom: -20px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 10px;
+  border-style: solid;
+  border-color: #7ab945 transparent transparent transparent;
+}
+
+.item_details {
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  /* min-height: 280px; */
+  justify-content: center;
+  padding: 1rem;
+  width: 90%;
+  /* max-width: 800px; */
+}
+
+.item_details h5 {
+  color: #7ab945;
+  margin-bottom: 1rem;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.item_details p {
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.5;
+}
+#item button {
+  width: 100%;
+}
+
+.fade-up {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.fade-up.aos-animate {
+  opacity: 1;
+}
+
+.aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+  /* Adjust properties based on your animation needs */
+}
+
+.read-more-btn {
+  display: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .services_container div {
+    width: 45%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .services_container {
+    row-gap: 2rem;
+  }
+  .services_container div {
+    width: 40%;
+  }
+}
+@media (max-width: 992px) {
+  .services_container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  .services_container div {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .services_container div {
+    width: 50%;
+    padding: 1rem 0.8rem; /* Adjust padding for smaller screens */
+  }
+  .service-close-button {
+    right: -19px;
+  }
+
+  .item_details {
+    width: 70%;
+    justify-content: flex-start;
+    padding: 1rem;
+  }
+
+  .item_details {
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.5;
+  }
+
+  .active,
+  .non-active {
+    width: 144%;
+    align-self: center;
+  }
+  .expanded-view {
+    overflow: hidden;
+    text-overflow: ellipsis; /* Add ellipsis for overflow */
+    white-space: nowrap; /* Prevent wrapping */
+  }
+
+  .expanded {
+    height: auto; /* Adjust this according to your needs */
+    overflow: visible;
+  }
+
+  .expanded-view {
+    height: 20px; /* Adjust this according to your needs */
+    overflow: hidden;
+  }
+
+  .buttons_row {
+    flex-direction: column;
+    width: fit-content;
+  }
+
+  .enq_btn {
+    width: 100%;
+    max-width: 200px; /* Limit maximum width for button on smaller screens */
+  }
+
+  .service-read-more-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .read-more-btn {
+    display: block;
+    background-color: transparent;
+    color: #7ab945;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px !important;
+    font-size: 12px !important;
+    margin-top: 10px;
+    text-align: center;
+    padding: 0.5rem 0 !important;
+    width: 30%;
+  }
+
+  .expanded-view {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .expanded {
+    height: auto;
+    overflow: visible;
+  }
+}
+
+@media (max-width: 560px) {
+  .services_container div {
+    width: 60%;
+    padding: 0.5rem;
+  }
+
+  .services_container p {
+    font-size: 16px;
+  }
+
+  .active,
+  .non-active {
+    width: 100%;
+    align-self: center;
+  }
+  .enq_btn {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .item_details {
+    width: 80%;
+    padding: 1rem;
+  }
+
+  .item_details h5 {
+    font-size: 18px;
+  }
+
+  .item_details p {
+    font-size: 14px;
+    width: 97%;
+  }
+}

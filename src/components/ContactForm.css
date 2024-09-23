@@ -1,0 +1,353 @@
+.contact_container {
+  
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  border-radius: 10px;
+  height: 50% !important; 
+  /* border: 1px solid red; */
+}
+.contact_form_container {
+  width: 60%;
+  height: fit-content;
+  display: grid;
+  border-radius: "10px";
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+.contact_img img {
+  width: 100%;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  /* height: 100%; */
+}
+.contact_form {
+  width: 70%;
+  display: flex;
+  border: 1px solid #7ab945;
+
+  /* padding: 1.5rem; */
+  /* margin-right: 25px; */
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: .5rem;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.form-container {
+  display: flex;
+  /* border: 5px solid navy; */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center !important; /* Align items to the left */
+  justify-content: center !important; /* Align items at the top */
+  padding: 0; /* Remove any default padding that could offset the alignment */
+  margin: 0; /* Remove any default margin that could offset the alignment */
+  width: 100%; /* Ensure the container takes up the full width of its parent */
+}
+/* .label-radio {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+} */
+.radio-input {
+  display: flex;
+  flex-direction: row;
+  /* gap: 0.5rem; */
+  align-items: center;
+  justify-content: flex-start;
+
+  input {
+    margin-left: -.5rem;
+    width: 20px;
+  }
+}
+
+.contact_img {
+  display: flex;
+  /* align-items: end; */
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+}
+
+#form_submit {
+  background-color: #7ab945;
+  border: none;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  height: 30px;
+  padding: 0.2rem;
+}
+#form_submit:hover {
+  background-color: white;
+  color: #7ab945;
+  border: 1px solid #7ab945;
+}
+.whatsapp-container {
+  display: flex;
+  align-items: center; /* Align items vertically center */
+}
+
+.whatsapp-container p {
+  margin: 0; /* Remove default margin */
+  font-size: 16px; /* Adjust font size as needed */
+}
+.whatsapp-container span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: start;
+  width: 24px; /* Adjust width and height of icon container */
+  height: 24px;
+  margin-right: 8px; /* Adjust spacing between icon and text */
+}
+
+form .form_footer {
+  margin-top: -12px;
+}
+
+.form_footer {
+  width: 100%;
+  /* margin: 5px; */
+}
+
+.form_footer p {
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .contact_form_container {
+    width: 90vw; /* Adjusted width for smaller screens */
+    grid-template-columns: 1fr; /* Stack columns into one for smaller screens */
+  }
+
+  .contact_img {
+    order: -1; /* Move image container to the top for smaller screens */
+    border-radius: 10px 10px 0 0; /* Adjust border radius for top corners */
+
+    img {
+      width: 86%;
+      height: 94%;
+      margin-top: 1rem;
+      border-radius: 8px;
+    }
+  }
+
+  .contact_form {
+    width: 70%; /* Full width for form on smaller screens */
+    padding: 1.8rem 1.5rem; /* Reduce padding */
+    border: none; /* Remove left border */
+    border-radius: 0 0 10px 10px; /* Adjust border radius for bottom corners */
+  }
+
+  .form_item {
+    width: 100%;
+  }
+
+  .contact_form input[type="text"],
+  .contact_form textarea {
+    width: calc(100% - 20px); /* Adjust input width to accommodate padding */
+  }
+
+  .form-container {
+    border-top: 1px solid rgb(26, 26, 26);
+    border-left: none;
+  }
+}
+
+/* General styles (applied to both large and small screens) */
+
+.label-radio {
+  display: flex;
+  font-size: 12px;
+  flex-direction: row;
+}
+
+.radio-input {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: flex-start;
+  /* border: 1px solid blue; */
+}
+.form_item {
+  width: 90% !important;
+  height: 12px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  color: gray;
+  font-size: 12px;
+  /* margin-left: -2.5rem; */
+}
+
+#form_submit {
+  width: 100%; /* Full width for submit button */
+}
+
+/* WhatsApp container styles */
+.whatsapp-container {
+  display: flex;
+  align-items: center;
+}
+
+.whatsapp-container p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.whatsapp-container span {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+.otp-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.otp-modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.otp-modal-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.otp-modal-content button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.otp-modal-content button:hover {
+  background: #0056b3;
+}
+
+.home-page-seller-popup-property-form {
+  width: 99%;
+}
+
+@media (max-width: 768px) {
+  .contact_img {
+    align-items: center;
+    img {
+      height: 80%;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .contact_img {
+    img {
+      height: 82%;
+      width: 86%;
+      border-radius: 8px;
+    }
+
+    .contact_form {
+      width: 100%;
+    }
+    .radio-input {
+      gap: 0;
+
+      label {
+        font-size: 12px !important;
+      }
+      
+      input[type="radio"] {
+        width: 10px !important;
+      }
+    }
+  }
+
+  .contact_form_container {
+    width: 80vw;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width:390px) {
+  .contact_container{
+    width: 100% !important;
+  }
+  .form-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .form_item{
+    width: 100% !important;
+    margin-left: -.7rem;
+  }
+  .form_footer{
+    margin-left: -1.5rem;
+  }
+  .label-radio{
+    margin-left: -.5rem;
+  }
+  .contact_form{
+    width: 100%;
+  }
+ .contact_container{
+  margin-left: 1.5rem;
+ }
+}
+@media screen and (max-width:320px) {
+  .contact_container{
+    width: 100% !important;
+  }
+  .form-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .form-container P{
+    margin-left: -1rem;
+  }
+  .form_item{
+    width: 100% !important;
+    margin-left: -1.2rem;
+  }
+  .form_footer{
+    margin-left: -1.5rem;
+  }
+  .label-radio{
+    margin-left: -.5rem;
+  }
+  .contact_form{
+    width: 100%;
+  }
+  .form_footer p{
+    font-size: 14px;
+    margin-left: .5rem;
+  }
+ .contact_container{
+  margin-left: 1.5rem;
+ }
+}

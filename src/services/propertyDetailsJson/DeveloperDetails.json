@@ -1,0 +1,88 @@
+[
+    {
+        "id":1,
+        "developerName":"LnT Realty",
+        "about":"L&T Realty is backed by rich experience of over 75 years in the construction industry",
+        "description":"L&T Realty is the residential and commercial real estate development part of the Larsen & Toubro Group an Indian multinational conglomerate which has an experience of more than 75 years in the field of technology, engineering, construction, manufacturing, and financial services. Based in Mumbai, L&T Realty has residential, commercial and retail projects across Mumbai, Bangalore, and Chennai. Besides these independent projects, L&T Realty has undertaken co-development projects of variously reputed builders. Currently, it has over 35 million sq.ft. of the area under various stages of development. The Company has successfully built business parks, Transit Oriented Development like the Navi Mumbai - Seawoods Grand Central, and many other residential buildings and complexes."
+    },
+     {
+        "id":2,
+        "developerName":"Godrej",
+        "about":"Godrej Properties Ltd is the real estate segment of the 120-year Godrej Group.",
+        "description":"Godrej Group ventured into the real estate development in 1990 as Godrej Properties Ltd, since then they are known for their excellent craftsmanship in developing contemporary housing projects which cover commercial, infrastructural and residential spaces. With over 200 awards under its belt, the company continues to deliver world-class housing spaces to its customers. They have put together a dynamic team of talented professional’s, project management consultants, world-renowned architects, and associates. Godrej Properties Ltd has built over 70 residential projects and 44 ongoing projects with cutting-edge design and technology, at par with international standards of construction. The ‘first of its kind’ projects by Godrej Properties Ltd are -the CII-Godrej Green Building Center in Hyderabad which is the first LEED (Leadership in Energy and Environmental Design) and The Godrej BKC at Bandra Kurla Complex is the only LEED Platinum rated building in India."
+    },
+    {
+        "id":3,
+        "developerName":"Lodha",
+        "about":"Established in 1980, Lodha Group is among the foremost real estate developers in Mumbai.",
+        "description":"Lodha Group is one of the prominent names in Real estate development in Mumbai. This group was founded in 1980 and made headlines by acquiring Rs.4,053 cr worth plot in Wadala from MMRDA (Mumbai Metropolitan Region Development Authority). Lodha Group has penetrated the real estate luxury segment of Pune, Hyderabad, Bangalore and United Kingdom. Since its conception 38 years back, the group has won many awards in the area of marketing excellence, largest sales generation and most profitable real estate player. Lodha Group offers properties in the segment of residences and IT Parks, townships, offices and weekend retreats including retail spaces."
+    },
+    {
+        "id": 4,
+        "developerName": "Prestige Groups",
+        "about": "Prestige Groups is a leading real estate developer based in India, known for their high-quality residential and commercial projects.",
+        "description": "Established in 1986, Prestige Groups has become one of India's leading real estate developers. With a reputation for delivering exceptional residential, commercial, retail, and hospitality projects, the group has built over 250 landmark developments across major cities in India. Prestige Groups is known for their commitment to quality and innovation, with projects that include luxury residences, high-end commercial spaces, and world-class retail and hospitality ventures. Their portfolio includes notable projects such as Prestige Shantiniketan, Prestige Golfshire, and Prestige Technology Park. The group's focus on sustainable and eco-friendly construction practices further underscores their dedication to providing high-quality living and working environments."
+    },
+    {
+        "id": 5,
+        "developerName": "Sobha Developers",
+        "about": "Sobha Developers is one of India's largest and most reputed real estate developers, known for their high-quality residential and commercial projects.",
+        "description": "Founded in 1995, Sobha Developers has established itself as a leading name in the real estate industry in India. Known for their commitment to excellence, Sobha Developers focuses on creating luxurious residential and commercial spaces that set new standards in the industry. The company has delivered over 300 residential projects and 17.8 million square feet of office space, with a portfolio that includes premium and luxury housing, commercial spaces, and integrated townships. Notable projects include Sobha City, Sobha Dream Acres, and Sobha Hartland. Sobha Developers is renowned for its emphasis on quality, craftsmanship, and customer satisfaction, with a track record of delivering projects on time and to the highest standards."
+    },
+    {
+        "id": 6,
+        "developerName": "CasaGrand",
+        "about": "CasaGrand is a prominent real estate developer known for its innovative residential and commercial projects across South India.",
+        "description": "CasaGrand, established in 2004, is a leading real estate developer with a strong presence in South India. The company is recognized for its commitment to delivering quality living spaces and commercial properties that meet high standards of design and construction. CasaGrand specializes in developing residential projects that offer modern amenities and are strategically located to ensure convenience and connectivity. With a focus on innovation and customer satisfaction, CasaGrand has successfully delivered numerous projects, including CasaGrand Nirvana, CasaGrand Florella, and CasaGrand Boulevard. Their projects are known for their contemporary design, sustainable practices, and attention to detail, making them a preferred choice for homebuyers and investors alike."
+    },
+    {
+        "id": 7,
+        "developerName": "Abhee Ventures",
+        "about": "Abhee Ventures is a reputed real estate developer known for its innovative and high-quality residential and commercial projects.",
+        "description": "Founded in 2005, Abhee Ventures has built a strong reputation in the real estate sector for its commitment to excellence and customer satisfaction. The company focuses on delivering well-planned and thoughtfully designed residential and commercial spaces that cater to modern living standards. Abhee Ventures has a diverse portfolio that includes luxury apartments, villas, and commercial properties across major cities in South India. Notable projects by Abhee Ventures include Abhee Prakruthi, Abhee The Tulip, and Abhee Lakeside. The company is known for its attention to detail, quality construction, and timely delivery, making it a trusted choice for homebuyers and investors."
+    },
+    {
+        "id": 8,
+        "developerName": "Sattva",
+        "about": "Sattva is a leading real estate developer in India, known for its premium residential and commercial projects that combine contemporary design with sustainability.",
+        "description": "Founded in 1988, Sattva has established itself as one of the premier real estate developers in India. The company focuses on delivering high-quality residential, commercial, and mixed-use developments that emphasize innovative design, superior craftsmanship, and sustainability. Sattva's portfolio includes luxury apartments, integrated townships, and commercial spaces across major cities in India. Notable projects include Sattva Ashoka Lakeside, Sattva Aspire, and Sattva Altana. The developer is known for its commitment to creating vibrant, eco-friendly communities and providing exceptional value to its customers through meticulous planning and execution."
+    },
+    {
+        "id": 9,
+        "developerName": "Assetz",
+        "about": "Assetz is a renowned real estate developer in India, specializing in high-quality residential and commercial properties with a focus on innovative design and sustainability.",
+        "description": "Established in 2006, Assetz has become a prominent name in the real estate sector, known for its commitment to excellence and customer satisfaction. The company offers a wide range of residential, commercial, and mixed-use developments across major cities in India. Assetz is recognized for its contemporary design, attention to detail, and sustainable construction practices. Their portfolio includes notable projects such as Assetz Marq, Assetz Canvas, and Assetz 38 & Banyan. With a focus on creating well-planned communities that provide an enhanced living experience, Assetz continues to deliver high-quality developments that meet the needs and aspirations of modern homebuyers and investors."
+    },
+    {
+        "id": 10,
+        "developerName": "Puravankara",
+        "about": "Puravankara is a prominent real estate developer specializing in creating premium residential and commercial spaces with a focus on quality, innovation, and luxury.",
+        "description": "Puravankara, established in 1975, is a major player in the Indian real estate market, known for its extensive portfolio of residential and commercial projects. The company is dedicated to developing high-quality properties that meet the highest standards of design and construction. Puravankara's offerings include luxury apartments, villas, integrated townships, and commercial spaces. The company is recognized for its emphasis on creating well-planned, aesthetically appealing developments that cater to diverse customer needs. Notable projects include Purva Skywood, Purva Highland, and Purva 270. Puravankara focuses on incorporating modern amenities and sustainable practices in its projects to enhance the living experience and ensure long-term value for its customers."
+    },
+    {
+        "id": 11,
+        "developerName": "Brigade Groups",
+        "about": "Brigade Groups is a leading real estate developer known for its diverse portfolio of residential, commercial, and hospitality projects across India.",
+        "description": "Established in 1986, Brigade Groups is a prominent name in the Indian real estate sector. The company is recognized for its commitment to delivering high-quality residential, commercial, and hospitality developments. Brigade Groups focuses on creating innovative and well-designed spaces that cater to a wide range of needs, from luxury apartments and villas to modern office spaces and hotels. Their portfolio includes notable projects such as Brigade Metropolis, Brigade Magnum, and Brigade Orchards. Brigade Groups is known for its emphasis on customer satisfaction, sustainability, and timely delivery, making it a trusted choice for homebuyers, investors, and businesses alike."
+    },
+     {
+    "id": 12,
+    "developerName": "TVS Emerald",
+    "about": "TVS Emerald is a prominent real estate developer renowned for its premium residential projects that offer a blend of modernity and tradition.",
+    "description": "Founded as part of the well-established TVS Group, TVS Emerald has been making its mark in the real estate sector with a commitment to quality and innovation. With a focus on crafting luxurious and sustainable living spaces, TVS Emerald has delivered several landmark residential projects that embody elegance and functionality. Their portfolio includes notable developments such as TVS Emerald Isle of Trees and TVS Emerald Green Acres. Known for their attention to detail, adherence to Vastu principles, and incorporation of state-of-the-art amenities, TVS Emerald aims to provide residents with not just homes, but a lifestyle of sophistication and comfort. Their dedication to customer satisfaction and timely project completion reinforces their reputation as a trusted name in real estate."
+   },
+   {
+  "id": 13,
+  "developerName": "Shriram",
+  "about": "Shriram Developers is a renowned real estate developer known for its extensive portfolio of residential and commercial projects across various cities in India.",
+  "description": "Established as part of the prominent Shriram Group, Shriram Developers has built a strong reputation for delivering quality real estate projects. With a focus on creating value-driven and customer-centric developments, Shriram Developers has contributed significantly to urban landscapes with innovative and sustainable projects. Their portfolio includes a variety of residential, commercial, and mixed-use developments that cater to diverse needs and preferences. Shriram Developers is committed to excellence, with an emphasis on timely delivery, high-quality construction, and superior customer service. Their projects often feature modern amenities, thoughtful design, and a focus on enhancing the overall living experience for residents."
+  }
+
+
+
+
+
+
+
+
+]
